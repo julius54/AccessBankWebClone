@@ -673,6 +673,11 @@ footer {
   }
 }
 
+#toggle,
+.hamburger {
+    display: none;
+}
+
 #switch {
     display: none;
 }
