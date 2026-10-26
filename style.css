@@ -567,7 +567,7 @@ nav {
 
 footer {
     background-color: #014086;
-    background-image: url();
+   background-image: url("https://www.accessbankplc.com/content/images/access-logo-bg.svg");
     background-position: right;
     background-repeat: no-repeat;
     padding-block: 5rem;
@@ -671,4 +671,104 @@ footer {
   .banner-section {
     flex-direction: column;
   }
+}
+
+#switch {
+    display: none;
+}
+
+
+
+
+/* media query rule / responsive css code  */
+@media (min-width: 260px) and (max-width: 460px) {
+    nav{
+        padding: .6rem 1rem;
+    }
+
+    .navRight {
+        display: none;
+    }
+
+    .accessLogo{
+        margin-left: 0!important;
+    }
+
+    .harmburger{
+        display: block;
+        font-size: 1.5rem;
+    }
+    .topleftlink {
+        display: none;
+    }
+    .topNav > label {
+        margin-left: 1rem;
+    }
+    .country {
+        margin-right: 1rem;
+    }
+
+    .search-input-wrapper {
+        background-color: #fff;
+    }
+
+    .search-input-wrapper > input{
+        display: none;
+    }
+
+    .search-input-wrapper > i{
+        font-size: 1.6rem;
+    }
+
+    .login{
+        align-items: center;
+        flex-direction: row-reverse;
+        margin-left: 6rem;
+    }
+
+    .login > button {
+        border: 2px solid #ee7e01;
+        background-color: #fff;
+        color: #ee7e01;
+        padding: 0.4rem 1rem ;
+    }
+    .secone {
+        background-size: contain;
+        background-position: top;
+        height: 50vh;
+    }
+
+    .hero {
+        margin-top: 3rem;
+        text-align: center;
+        width: 350px;
+    }
+
+    .hero > h1 {
+        font-size: 2rem;
+        color: #000;
+    }
+
+    .hero > p {
+        font-size: 26px;
+        color: #000;
+}
+
+.servicesgrid {
+    grid-template-columns: 1fr;
+    width: calc(100% - 40px);
+}
+
+.innerfooter {
+    width: calc(100% - 40px);
+    text-align: center;
+    flex-direction: column;
+}
+
+.footercard {
+    width: 100%;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+}
 }
