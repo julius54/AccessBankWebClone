@@ -776,4 +776,9 @@ footer {
     margin-bottom: 2rem;
     border-radius: 2rem;
 }
+
+.Financinggrid {
+      grid-template-columns: 1fr;
+    width: calc(100% - 40px);
+}
 }
