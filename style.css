@@ -678,7 +678,8 @@ footer {
     display: none;
 }
 
-#switch {
+
+#switch, .ham {
     display: none;
 }
 
@@ -693,15 +694,45 @@ footer {
 
     .navRight {
         display: none;
+        height: 70vh;
+        width: 350px;
+        background-color: #000;
+        opacity: .7;
+        padding: 2rem;
+        position: absolute;
+        top: 4.6rem;
+        right: .5rem;
+    }
+
+    .navitems {
+        /* align-items: start; */
+        flex-direction: column;
+    }
+
+    .navitems > a {
+        font-size: 14px;
+        border-bottom: 2px solid #fff;
+        color: #fff;
+    }
+
+    #toggle:checked + .navRight {
+        display: block;
     }
 
     .accessLogo{
         margin-left: 0!important;
     }
 
-    .harmburger{
+    .ham {
         display: block;
         font-size: 1.5rem;
+    }
+
+    .hamburger{
+        display: block;
+        font-size: 1.5rem;
+        position: absolute;
+        right: 0;
     }
     .topleftlink {
         display: none;
